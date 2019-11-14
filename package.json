@@ -1,6 +1,6 @@
 {
   "name": "@leonmin/icons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "lightweight icons",
   "main": "src/config.js",
   "typings": "src/config.d.ts",
