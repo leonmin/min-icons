@@ -38,7 +38,7 @@ function font() {
       iconfontCss({
         fontName: config.name,
         path: template,
-        targetPath: '../src/index.less',
+        targetPath: '../src/index.css',
         normalize: true,
         firstGlyph: 0xf000,
         cssClass: fontName // this is a trick to pass fontName to template

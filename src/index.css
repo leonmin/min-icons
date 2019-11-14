@@ -1,0 +1,107 @@
+/* stylelint-disable selector-pseudo-element-colon-notation */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+	font-family: "min-icon";
+	src: url('min-icon-6f1170.woff2') format('woff2'),
+    url('min-icon-6f1170.woff') format('woff'),
+    url('min-icon-6f1170.ttf') format('truetype');
+}
+
+.min-icon:before {
+	font-family: "min-icon";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.min-icon-file-alt:before {
+	content: "\F000";
+}
+
+.min-icon-file-archive:before {
+	content: "\F001";
+}
+
+.min-icon-file-audio:before {
+	content: "\F002";
+}
+
+.min-icon-file-code:before {
+	content: "\F003";
+}
+
+.min-icon-file-contract:before {
+	content: "\F004";
+}
+
+.min-icon-file-csv:before {
+	content: "\F005";
+}
+
+.min-icon-file-download:before {
+	content: "\F006";
+}
+
+.min-icon-file-excel:before {
+	content: "\F007";
+}
+
+.min-icon-file-image:before {
+	content: "\F008";
+}
+
+.min-icon-file-medical-alt:before {
+	content: "\F009";
+}
+
+.min-icon-file-pdf:before {
+	content: "\F00A";
+}
+
+.min-icon-file-powerpoint:before {
+	content: "\F00B";
+}
+
+.min-icon-file-video:before {
+	content: "\F00C";
+}
+
+.min-icon-file-word:before {
+	content: "\F00D";
+}
+
+.min-icon-kiss-beam:before {
+	content: "\F00E";
+}
+
+.min-icon-kiss-wink-heart:before {
+	content: "\F00F";
+}
+
+.min-icon-kiss:before {
+	content: "\F010";
+}
+
+.min-icon-laugh-beam:before {
+	content: "\F011";
+}
+
+.min-icon-laugh-squint:before {
+	content: "\F012";
+}
+
+.min-icon-laugh-wink:before {
+	content: "\F013";
+}
+
+.min-icon-laugh:before {
+	content: "\F014";
+}

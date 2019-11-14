@@ -1,28 +1,28 @@
 /* stylelint-disable selector-pseudo-element-colon-notation */
 @font-face {
   font-weight: normal;
-  font-family: '<%= fontName %>';
   font-style: normal;
   font-display: auto;
-  src: url('<%= cssClass %>.woff2') format('woff2'),
+	font-family: "<%= fontName %>";
+	src: url('<%= cssClass %>.woff2') format('woff2'),
     url('<%= cssClass %>.woff') format('woff'),
     url('<%= cssClass %>.ttf') format('truetype');
 }
 
-.van-icon {
-  position: relative;
-  display: inline-block;
-  font: normal normal normal 14px/1 "<%= fontName %>";
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  &::before {
-    display: inline-block;
-  }
+.<%= fontName %>:before {
+	font-family: "<%= fontName %>";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
 }
 
-<% _.each(glyphs, function(glyph) { %>.van-icon-<%= glyph.fileName %>:before {
-  content: "\<%= glyph.codePoint %>";
+<% _.each(glyphs, function(glyph) { %>
+.<%= fontName %>-<%= glyph.fileName %>:before {
+	content: "\<%= glyph.codePoint %>";
 }
-
 <% }); %>
