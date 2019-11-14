@@ -1,0 +1,50 @@
+{
+  "name": "@leonmin/icons",
+  "version": "0.0.1",
+  "description": "lightweight icons",
+  "main": "src/config.js",
+  "typings": "src/config.d.ts",
+  "scripts": {
+    "build": "tsc && gulp --gulpfile ./build/build-iconfont.js",
+    "test": "jest --config jestconfig.json",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:leonmin/min-icons.git"
+  },
+  "keywords": [
+    "icons",
+    "font awesome",
+    "leonmin",
+    "min"
+  ],
+  "author": "leonmin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.7",
+    "fast-glob": "^3.1.0",
+    "fs-extra": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0",
+    "jest": "^24.9.0",
+    "md5": "^2.2.1",
+    "shelljs": "^0.8.3",
+    "ts-jest": "^24.1.0"
+  },
+  "dependencies": {
+    "husky": "^4.0.0-beta.5",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
